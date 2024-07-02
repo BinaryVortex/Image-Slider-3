@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+.slideshow-container {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	margin: auto;
+}
+
+.mySlides img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 26px;
+	transition: .6s ease;
+	border-radius: 0 3px 3px 0;
+	background: #000000;
+	text-decoration: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px  0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	opacity: 0.8;
+}
+
+.text {
+	color: #ffffff;
+	font-size: 40px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+}
+
+.numbertext {
+	color: #ffffff;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.dot_main {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: 0.3s;
+}
